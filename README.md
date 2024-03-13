@@ -3,6 +3,7 @@ Inspired by the challenges and learnings from the [**42 School**](https://42.fr/
 
 ## Part 1 - Functions of libc
 It consists of remaking the functions of **libc** with the same prototypes and implementing the same behaviors as the original functions.
+
 ```int	ft_isalpha(int c);```  
 ```int	ft_isdigit(int c);```  
 ```int	ft_isalnum(int c);```  
