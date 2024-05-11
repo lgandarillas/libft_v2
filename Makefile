@@ -6,7 +6,7 @@
 #    By: lgandari <lgandari@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/26 15:29:18 by lgandari          #+#    #+#              #
-#    Updated: 2024/03/08 20:18:37 by lgandari         ###   ########.fr        #
+#    Updated: 2024/05/11 19:41:16 by lgandari         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,10 @@ OBJ_PRINTF = $(addprefix $(OBJ_DIR), $(PRINTF_SRCS:$(PRINTF_DIR)%.c=%.o))
 OBJ = $(OBJ_LIBFT) $(OBJ_GNL) $(OBJ_PRINTF)
 
 CC = gcc
+
 CFLAGS = -Wall -Wextra -Werror
+DFLAGS = -g3 #-fsanitize=address
+
 IFLAGS = -I$(INC_DIR) -I$(INC_DIR)libft -I$(INC_DIR)get_next_line -I$(INC_DIR)ft_printf
 
 TOTAL_FILES  := $(words $(LIBFT_SRCS) $(GNL_SRCS) $(PRINTF_SRCS))
@@ -93,5 +96,8 @@ fclean: clean
 		@$(RM) $(LIBNAME)
 
 re: fclean all
+
+debug: CFLAGS +=$(DFLAGS)
+debug: all
 
 .PHONY: all clean fclean re
