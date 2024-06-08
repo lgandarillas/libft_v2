@@ -75,3 +75,5 @@ Function that returns the line read from a file descriptor.
 - The function should return the line just read. If there's nothing more to read or an error occurs, it should return NULL.
 - Can read from both a file and from stdin.
 - The returned line should end with the newline character ('\n'), except when the end of the file is reached, and it does not end with a newline character.
+
+(Test)
