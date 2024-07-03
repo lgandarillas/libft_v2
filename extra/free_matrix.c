@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extra.h                                            :+:      :+:    :+:   */
+/*   free_matrix.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgandari <lgandari@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: lgandari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2024/07/03 20:19:41 by lgandari         ###   ########.fr       */
+/*   Created: 2024/07/03 20:16:15 by lgandari          #+#    #+#             */
+/*   Updated: 2024/07/03 20:19:48 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EXTRA_H
-# define EXTRA_H
+#include "../inc/extra.h"
 
-# include <stdlib.h>
-# include <unistd.h>
+void	free_matrix(char **matrix)
+{
+	int	i;
 
-# include "../inc/libft.h"
-
-void	free_matrix(char **matrix);
-int	ft_strcmp(const char *s1, const char *s2);
-int	print_error(char *msg, int exit_code);
-
-#endif
+	i = 0;
+	while (matrix[i] != NULL)
+		free(matrix[i++]);
+	free(matrix);
+	return ;
+}
