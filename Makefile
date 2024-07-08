@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lgandari <lgandari@student.42madrid.com>   +#+  +:+       +#+         #
+#    By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/26 15:29:18 by lgandari          #+#    #+#              #
-#    Updated: 2024/07/03 20:18:59 by lgandari         ###   ########.fr        #
+#    Updated: 2024/07/08 16:56:02 by aquinter         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ LIBFT_SRCS = $(addprefix $(LIBFT_DIR), \
 		ft_isprint.c      ft_memchr.c       ft_strdup.c       ft_substr.c  \
 		ft_itoa.c         ft_memcmp.c       ft_striteri.c     ft_tolower.c \
 		ft_lstadd_back.c  ft_memcpy.c       ft_strjoin.c      ft_toupper.c \
-		ft_lstadd_front.c ft_memmove.c      ft_strlcat.c			ft_strcpy.c)
+		ft_lstadd_front.c ft_memmove.c      ft_strlcat.c	  ft_strcpy.c)
 
 GNL_SRCS = $(addprefix $(GNL_DIR), \
 		get_next_line.c)
@@ -44,7 +44,8 @@ GNL_SRCS = $(addprefix $(GNL_DIR), \
 PRINTF_SRCS = $(addprefix $(PRINTF_DIR), \
 		ft_printf.c ft_printf_putnbr.c ft_printf_utils.c)
 
-EXTRA_SRCS	= $(addprefix $(EXTRA_DIR), free_matrix.c ft_strcmp.c print_error.c)
+EXTRA_SRCS	= $(addprefix $(EXTRA_DIR), \
+		free_matrix.c ft_strcmp.c print_error.c	ft_arrlen.c)
 
 OBJ_LIBFT	= $(addprefix $(OBJ_DIR), $(LIBFT_SRCS:$(LIBFT_DIR)%.c=%.o))
 OBJ_GNL		= $(addprefix $(OBJ_DIR), $(GNL_SRCS:$(GNL_DIR)%.c=%.o))
