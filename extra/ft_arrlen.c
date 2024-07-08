@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extra.h                                            :+:      :+:    :+:   */
+/*   ft_arraylen.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2024/07/08 16:50:56 by aquinter         ###   ########.fr       */
+/*   Created: 2024/07/08 16:37:24 by aquinter          #+#    #+#             */
+/*   Updated: 2024/07/08 16:50:38 by aquinter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EXTRA_H
-# define EXTRA_H
+#include "../inc/extra.h"
 
-# include <stdlib.h>
-# include <unistd.h>
+int	ft_arrlen(void **arr)
+{
+	int	i;
 
-# include "../inc/libft.h"
-
-void	free_matrix(char **matrix);
-int		ft_strcmp(const char *s1, const char *s2);
-int		print_error(char *msg);
-int		ft_arrlen(void **arr);
-
-#endif
+	i = 0;
+	while (arr[i] != NULL)
+		i++;
+	return (i);
+}
