@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_arraylen.c                                      :+:      :+:    :+:   */
+/*   ft_arrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 16:37:24 by aquinter          #+#    #+#             */
-/*   Updated: 2024/07/08 16:50:38 by aquinter         ###   ########.fr       */
+/*   Updated: 2024/07/09 18:24:53 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/extra.h"
 
-int	ft_arrlen(void **arr)
+size_t	ft_arrlen(void **arr)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (arr[i] != NULL)
