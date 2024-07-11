@@ -6,7 +6,7 @@
 /*   By: lgandari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 20:16:15 by lgandari          #+#    #+#             */
-/*   Updated: 2024/07/03 20:19:48 by lgandari         ###   ########.fr       */
+/*   Updated: 2024/07/11 19:55:01 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ void	free_matrix(char **matrix)
 	while (matrix[i] != NULL)
 		free(matrix[i++]);
 	free(matrix);
+	matrix = NULL;
 	return ;
 }
