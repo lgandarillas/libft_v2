@@ -6,7 +6,7 @@
 #    By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/26 15:29:18 by lgandari          #+#    #+#              #
-#    Updated: 2024/07/08 16:56:02 by aquinter         ###   ########.fr        #
+#    Updated: 2024/07/12 19:09:50 by lgandari         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,8 @@ PRINTF_SRCS = $(addprefix $(PRINTF_DIR), \
 		ft_printf.c ft_printf_putnbr.c ft_printf_utils.c)
 
 EXTRA_SRCS	= $(addprefix $(EXTRA_DIR), \
-		free_matrix.c ft_strcmp.c print_error.c	ft_arrlen.c)
+		free_matrix.c ft_strcmp.c print_error.c	ft_arrlen.c \
+		ft_countchar.c)
 
 OBJ_LIBFT	= $(addprefix $(OBJ_DIR), $(LIBFT_SRCS:$(LIBFT_DIR)%.c=%.o))
 OBJ_GNL		= $(addprefix $(OBJ_DIR), $(GNL_SRCS:$(GNL_DIR)%.c=%.o))
