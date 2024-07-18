@@ -5,8 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lgandari <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
+<<<<<<< HEAD
 #    Created: 2024/07/18 23:09:28 by lgandari          #+#    #+#              #
 #    Updated: 2024/07/18 23:09:32 by lgandari         ###   ########.fr        #
+=======
+#    Created: 2024/02/26 15:29:18 by lgandari          #+#    #+#              #
+<<<<<<< HEAD
+#    Updated: 2024/07/18 22:36:46 by aquinter         ###   ########.fr        #
+=======
+#    Updated: 2024/07/18 21:20:37 by lgandari         ###   ########.fr        #
+>>>>>>> 2560c106fb67b8093db06183a26e4ec77ed7fcf4
+>>>>>>> 5ca4d806522ebd6477d23809e0a119bab852ed3e
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +55,7 @@ PRINTF_SRCS = $(addprefix $(PRINTF_DIR), \
 
 EXTRA_SRCS	= $(addprefix $(EXTRA_DIR), \
 		free_matrix.c ft_strcmp.c print_error.c	ft_arrlen.c \
-		ft_countchar.c ft_matrixdup.c)
+		ft_countchar.c ft_strdigit.c ft_matrixdup.c)
 
 OBJ_LIBFT	= $(addprefix $(OBJ_DIR), $(LIBFT_SRCS:$(LIBFT_DIR)%.c=%.o))
 OBJ_GNL		= $(addprefix $(OBJ_DIR), $(GNL_SRCS:$(GNL_DIR)%.c=%.o))
