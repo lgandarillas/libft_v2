@@ -6,7 +6,7 @@
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2024/07/18 22:39:11 by aquinter         ###   ########.fr       */
+/*   Updated: 2024/07/25 17:00:34 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ size_t	ft_arrlen(void **arr);
 int		ft_countchar(const char *s, char c);
 bool	ft_strdigit(const char *str);
 char	**ft_matrixdup(char **old_matrix);
+char	*ft_strndup(const char *s, size_t n);
 
 #endif
