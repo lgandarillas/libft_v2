@@ -6,7 +6,7 @@
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2024/08/13 19:33:33 by lgandari         ###   ########.fr       */
+/*   Updated: 2024/08/15 15:02:06 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int		print_error(char *msg);
 int		ft_countchar(const char *s, char c);
 bool	ft_strdigit(const char *str);
 char	*ft_strndup(const char *s, size_t n);
-char	*ft_strjoin_free(char *s1, char *s2);
+char	*ft_strjoin_free(char *s1, char *s2, bool free_s1, bool free_s2);
 char	*ft_substr_free(char *s, unsigned int start, size_t len);
 
 #endif
