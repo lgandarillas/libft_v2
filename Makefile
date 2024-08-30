@@ -6,7 +6,7 @@
 #    By: lgandari <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/18 23:12:58 by lgandari          #+#    #+#              #
-#    Updated: 2024/08/13 19:33:59 by lgandari         ###   ########.fr        #
+#    Updated: 2024/08/30 19:19:32 by lgandari         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,8 +58,7 @@ OBJ = $(OBJ_LIBFT) $(OBJ_GNL) $(OBJ_PRINTF) $(OBJ_EXTRA)
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
-DFLAGS = -g3 -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
 
 IFLAGS = -I$(INC_DIR) -I$(INC_DIR)libft -I$(INC_DIR)get_next_line \
 		 -I$(INC_DIR)ft_printf -I$(INC_DIR)extra
@@ -111,7 +110,6 @@ fclean: clean
 
 re: fclean all
 
-debug: CFLAGS +=$(DFLAGS)
 debug: all
 
 .PHONY: all clean fclean re
