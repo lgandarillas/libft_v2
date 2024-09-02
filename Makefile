@@ -6,7 +6,7 @@
 #    By: lgandari <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/18 23:12:58 by lgandari          #+#    #+#              #
-#    Updated: 2024/09/01 10:30:50 by lgandari         ###   ########.fr        #
+#    Updated: 2024/09/02 19:55:09 by lgandari         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ OBJ_EXTRA	= $(addprefix $(OBJ_DIR), $(EXTRA_SRCS:$(EXTRA_DIR)%.c=%.o))
 
 OBJ = $(OBJ_LIBFT) $(OBJ_GNL) $(OBJ_PRINTF) $(OBJ_EXTRA)
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
 
