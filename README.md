@@ -1,4 +1,4 @@
-# libft_v2
+# [libft_v2 | 42 School]
 Inspired by the challenges and learnings from the [**42 School**](https://42.fr/en/homepage/) curriculum, **libft_v2** seeks to further enhance the utility of the original libft while providing a platform for exploration and innovation in C programming.
 
 ## Part 1 - Functions of libc
