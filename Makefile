@@ -58,7 +58,8 @@ OBJ = $(OBJ_LIBFT) $(OBJ_GNL) $(OBJ_PRINTF) $(OBJ_EXTRA)
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror
+DFLAGS = -g3 -fsanitize=address
 
 IFLAGS = -I$(INC_DIR) -I$(INC_DIR)libft -I$(INC_DIR)get_next_line \
 		 -I$(INC_DIR)ft_printf -I$(INC_DIR)extra
@@ -109,7 +110,11 @@ fclean: clean
 		@$(RM) $(LIBNAME)
 
 re: fclean all
+debug: CFLAGS += $(DFLAG)
+debug:
+	@echo "$(GREEN)Compiling in debug mode...$(NC)"
+	@$(RM) $(OBJ) $(LIBNAME)
+	@rm -rf $(OBJ_DIR)
+	@$(MAKE) all --silent
 
-debug: all
-
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re debug
