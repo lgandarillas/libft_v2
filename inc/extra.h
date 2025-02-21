@@ -6,7 +6,7 @@
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2024/09/01 10:30:12 by lgandari         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:42:13 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ char	*ft_strndup(const char *s, size_t n);
 char	*ft_strjoin_free(char *s1, char *s2, bool free_s1, bool free_s2);
 char	*ft_substr_free(char *s, unsigned int start, size_t len);
 char	**append_str(char **arr, char *str);
+int		check_extension(char *filename, char *extension);
 
 #endif
