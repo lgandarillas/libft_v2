@@ -6,7 +6,7 @@
 /*   By: aquinter <aquinter@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:59:00 by lgandari          #+#    #+#             */
-/*   Updated: 2025/03/01 10:52:37 by lgandari         ###   ########.fr       */
+/*   Updated: 2025/03/01 10:56:45 by lgandari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	**ft_matrixdup(char **old_matrix);
 size_t	ft_arrlen(void **arr);
 
 int		ft_strcmp(const char *s1, const char *s2);
-int		print_error(char *msg, bool exit_prog);
+void	print_error(char *msg, bool exit_prog);
 int		ft_countchar(const char *s, char c);
 bool	ft_strdigit(const char *str);
 char	*ft_strndup(const char *s, size_t n);
